@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AppWeb1.Data;
 using AppWeb1.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace AppWeb1.Pages.Plataformes
 {
@@ -19,14 +20,27 @@ namespace AppWeb1.Pages.Plataformes
             _context = context;
         }
 
-        public IList<Plataforma> Plataforma { get;set; } = default!;
+        public IList<Plataforma> Plataforma { get; set; }
+        [BindProperty(SupportsGet = true)]
 
+        public string SearchString { get; set; }
+
+        public SelectList Genres { get; set; }
+        [BindProperty(SupportsGet = true)]
+
+        public string Title { get; set; }
         public async Task OnGetAsync()
         {
-            if (_context.Plataforma != null)
+            var plataformes = from m in _context.Plataforma
+                         select m;
+
+            if (!string.IsNullOrEmpty(SearchString))
             {
-                Plataforma = await _context.Plataforma.ToListAsync();
+                plataformes = plataformes.Where(s => s.Title.Contains(SearchString));
             }
+
+            Plataforma = await plataformes.ToListAsync();
         }
     }
+
 }
