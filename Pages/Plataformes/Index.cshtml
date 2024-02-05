@@ -1,0 +1,48 @@
+﻿@page
+@model AppWeb1.Pages.Plataformes.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Plataforma[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plataforma[0].Price_month)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plataforma[0].Price_year)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Plataforma) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price_month)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price_year)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

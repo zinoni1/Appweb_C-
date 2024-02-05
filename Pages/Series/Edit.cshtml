@@ -1,0 +1,55 @@
+﻿@page
+@model AppWeb1.Pages.Series.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Serie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Serie.Id" />
+            <div class="form-group">
+                <label asp-for="Serie.Title" class="control-label"></label>
+                <input asp-for="Serie.Title" class="form-control" />
+                <span asp-validation-for="Serie.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Serie.ReleaseDate" class="control-label"></label>
+                <input asp-for="Serie.ReleaseDate" class="form-control" />
+                <span asp-validation-for="Serie.ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Serie.Genre" class="control-label"></label>
+                <input asp-for="Serie.Genre" class="form-control" />
+                <span asp-validation-for="Serie.Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Serie.Price" class="control-label"></label>
+                <input asp-for="Serie.Price" class="form-control" />
+                <span asp-validation-for="Serie.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Serie.num_temporades" class="control-label"></label>
+                <input asp-for="Serie.num_temporades" class="form-control" />
+                <span asp-validation-for="Serie.num_temporades" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
