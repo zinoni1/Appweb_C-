@@ -31,10 +31,15 @@ namespace AppWeb1.Pages.Series
         public string MovieGenre { get; set; }
         public async Task OnGetAsync()
         {
-            if (_context.Serie != null)
+            var series = from m in _context.Serie
+                         select m;
+
+            if (!string.IsNullOrEmpty(SearchString))
             {
-                Serie = await _context.Serie.ToListAsync();
+                series = series.Where(s => s.Title.Contains(SearchString));
             }
+
+            Serie = await series.ToListAsync();
         }
     }
 }
