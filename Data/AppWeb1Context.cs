@@ -17,5 +17,7 @@ namespace AppWeb1.Data
         public DbSet<AppWeb1.Models.Serie> Serie { get; set; } = default!;
 
         public DbSet<AppWeb1.Models.Plataforma>? Plataforma { get; set; }
+
+        public DbSet<AppWeb1.Models.Client>? Client { get; set; }
     }
 }
