@@ -28,7 +28,7 @@ namespace AppWeb1.Pages.Clients
         public SelectList Genres { get; set; }
         [BindProperty(SupportsGet = true)]
 
-        public string Title { get; set; }
+        public string Nom { get; set; }
         public async Task OnGetAsync()
         {
             var clients = from m in _context.Client
