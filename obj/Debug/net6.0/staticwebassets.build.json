@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KJIwsLsZpQ97iMj3ITB/mvsXN4lkf/L5cVlvoqmZ94Q=",
+  "Hash": "EX4bj3yMfKdGXo/TnZDvEdllWuqIP9ClOyKJx1CcVuU=",
   "Source": "AppWeb1",
   "BasePath": "_content/AppWeb1",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Zenonrp\\source\\repos\\AppWeb1\\AppWeb1\\wwwroot\\js\\bookList.js",
+      "SourceId": "AppWeb1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zenonrp\\source\\repos\\AppWeb1\\AppWeb1\\wwwroot\\",
+      "BasePath": "_content/AppWeb1",
+      "RelativePath": "js/bookList.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bookList.js"
     },
     {
       "Identity": "C:\\Users\\Zenonrp\\source\\repos\\AppWeb1\\AppWeb1\\wwwroot\\js\\site.js",

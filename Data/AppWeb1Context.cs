@@ -19,5 +19,7 @@ namespace AppWeb1.Data
         public DbSet<AppWeb1.Models.Plataforma>? Plataforma { get; set; }
 
         public DbSet<AppWeb1.Models.Client>? Client { get; set; }
+
+        public DbSet<AppWeb1.Models.Book>? Book { get; set; }
     }
 }

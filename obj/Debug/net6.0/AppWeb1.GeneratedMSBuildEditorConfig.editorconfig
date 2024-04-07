@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Zenonrp\source\repos\AppWeb1\AppWeb1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Zenonrp/source/repos/AppWeb1/AppWeb1/Pages/BookList/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va0xpc3RcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zenonrp/source/repos/AppWeb1/AppWeb1/Pages/BookList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va0xpc3RcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zenonrp/source/repos/AppWeb1/AppWeb1/Pages/BookList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va0xpc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Zenonrp/source/repos/AppWeb1/AppWeb1/Pages/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

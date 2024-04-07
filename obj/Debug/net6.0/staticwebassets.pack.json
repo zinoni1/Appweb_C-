@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Zenonrp\\source\\repos\\AppWeb1\\AppWeb1\\wwwroot\\js\\bookList.js",
+      "PackagePath": "staticwebassets\\js\\bookList.js"
+    },
+    {
       "Id": "C:\\Users\\Zenonrp\\source\\repos\\AppWeb1\\AppWeb1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

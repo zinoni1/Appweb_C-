@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<AppWeb1Context>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("AppWeb1Context") ?? throw new InvalidOperationException("Connection string 'AppWeb1Context' not found.")));
-
+builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,4 +27,11 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapRazorPages();
+    endpoints.MapControllers();
+}); 
 app.Run();
